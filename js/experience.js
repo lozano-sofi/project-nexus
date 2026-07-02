@@ -118,17 +118,21 @@ const Elements = {
 
 function loadExperienceData() {
 
-    Experience.customer =
-        getCurrentCustomer();
+    Experience.customer = getCurrentCustomer() || null;
 
-    Experience.journey =
-        getCurrentJourney();
+    Experience.journey = getCurrentJourney() || null;
 
-    Experience.purchases =
-        getCurrentPurchases();
+    Experience.purchases = getCurrentPurchases() || {
 
-    Experience.subscription =
-        getCurrentSubscription();
+        purchases: []
+
+    };
+
+    Experience.subscription = getCurrentSubscription() || {
+
+        subscription: {}
+
+    };
 
 }
 
