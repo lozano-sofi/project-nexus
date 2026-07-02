@@ -8,11 +8,8 @@ const Storage = {
     set(key, value) {
 
         localStorage.setItem(
-
             key,
-
             JSON.stringify(value)
-
         );
 
     },
@@ -53,13 +50,13 @@ function initializeStorage() {
 
     if (!Storage.get("customer")) {
 
-        Storage.set("customer", 1234);
+        Storage.set("customer", 1001);
 
     }
 
     if (!Storage.get("journey")) {
 
-        Storage.set("journey", "day-1");
+        Storage.set("journey", "week-1");
 
     }
 
