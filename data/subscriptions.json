@@ -1,0 +1,41 @@
+[
+  {
+    "customerId": 1001,
+    "subscription": {
+      "planId": "CARE-PREMIUM",
+      "planName": "Solar Care Premium",
+      "status": "Active",
+      "startedAt": "2019-04-01",
+      "renewalDate": "2027-04-01",
+      "billing": "Annual",
+      "price": 299,
+      "currency": "USD",
+      "benefits": [
+        "Priority Support",
+        "Annual Preventive Inspection",
+        "Performance Monitoring",
+        "Exclusive Customer Rewards"
+      ]
+    }
+  },
+
+  {
+    "customerId": 1002,
+    "subscription": {
+      "planId": "BUSINESS-PERFORMANCE",
+      "planName": "Business Performance",
+      "status": "Active",
+      "startedAt": "2021-08-01",
+      "renewalDate": "2027-08-01",
+      "billing": "Annual",
+      "price": 990,
+      "currency": "USD",
+      "benefits": [
+        "Dedicated Account Manager",
+        "24/7 Priority Support",
+        "Monthly Performance Reports",
+        "Annual System Optimization"
+      ]
+    }
+  }
+]
