@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1001,
+    "name": "Olivia Carter",
+    "profile": "Residential",
+    "memberSince": "2019",
+    "journey": "year-5",
+    "subscription": "Solar Care Premium",
+    "preferredContact": "WhatsApp",
+    "lastInteraction": "2 days ago",
+    "satisfaction": 98,
+
+    "dashboard": {
+      "greeting": "Good afternoon 👋",
+      "heroTitle": "Welcome back.",
+      "heroText": "Everything is running perfectly. Your solar ecosystem continues to generate savings every day.",
+
+      "savings": "$12,480",
+      "energy": "38,250 kWh",
+      "co2": "14.8 t",
+      "relationship": "5 Years"
+    }
+  },
+
+  {
+    "id": 1002,
+    "name": "Leonardo Costa",
+    "profile": "Commercial",
+    "memberSince": "2021",
+    "journey": "year-3",
+    "subscription": "Business Performance",
+    "preferredContact": "Email",
+    "lastInteraction": "Yesterday",
+    "satisfaction": 95,
+
+    "dashboard": {
+      "greeting": "Good afternoon 👋",
+      "heroTitle": "Business performance looks great.",
+      "heroText": "Your commercial solar operation exceeded this month's production forecast.",
+
+      "savings": "$42,960",
+      "energy": "126,900 kWh",
+      "co2": "51.4 t",
+      "relationship": "3 Years"
+    }
+  }
+]
