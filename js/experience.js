@@ -135,6 +135,22 @@ function loadExperienceData() {
 /* ==========================================
    HEADER
 ========================================== */
+function updateLastSync() {
+
+    if (!Elements.lastSync) {
+
+        return;
+
+    }
+
+    const now = new Date();
+
+    Elements.lastSync.textContent =
+
+        `Last sync • ${now.toLocaleTimeString()}`;
+
+}
+
 
 function renderHeader() {
 
@@ -150,8 +166,7 @@ function renderHeader() {
     Elements.greeting.textContent =
         dashboard.greeting;
 
-    Elements.lastSync.textContent =
-        "Last sync • Just now";
+    updateLastSync();
 
     Elements.profileName.textContent =
         Experience.customer.name.split(" ")[0];
@@ -247,24 +262,6 @@ function renderCustomerInformation() {
 
     Elements.customerScore.textContent =
         `${Experience.customer.satisfaction}%`;
-
-}
-
-/* ==========================================
-   MAIN RENDER
-========================================== */
-
-function renderExperience() {
-
-    loadExperienceData();
-
-    renderHeader();
-
-    renderHero();
-
-    renderMetrics();
-
-    renderCustomerInformation();
 
 }
 
@@ -453,9 +450,13 @@ function renderInsights() {
 
     }
 
+   const purchases =
+
+    Experience.purchases?.purchases || [];
+
     const totalInvestment =
 
-        Experience.purchases.purchases.reduce(
+        purchases.reduce(
 
             (total, purchase) =>
 
@@ -706,6 +707,18 @@ function changeCustomer(customerId) {
 
     refreshExperience();
 
+    if (
+
+        typeof refreshTranslations ===
+
+        "function"
+
+    ) {
+
+        refreshTranslations();
+
+    }
+
 }
 
 /* ==========================================
@@ -723,6 +736,18 @@ function changeJourney(journeyId) {
     );
 
     refreshExperience();
+
+    if (
+
+        typeof refreshTranslations ===
+
+        "function"
+
+    ) {
+
+        refreshTranslations();
+
+    }
 
 }
 
@@ -843,6 +868,12 @@ window.Experience = {
         return Experience.subscription;
 
     },
+
+   state() {
+
+    return Experience;
+
+},
 
     render: renderExperience,
 
