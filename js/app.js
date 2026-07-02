@@ -9,31 +9,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initializeLanguageSelection();
 
+    initializeTerms();
+
 });
 
 /* ==========================================
-   LANGUAGE SELECTION
+   LANGUAGE
 ========================================== */
 
-function initializeLanguageSelection() {
+function initializeLanguageSelection(){
 
-    const languageButtons = document.querySelectorAll("[data-language]");
+    const buttons=document.querySelectorAll("[data-language]");
 
-    if (!languageButtons.length) {
+    if(!buttons.length) return;
 
-        return;
+    buttons.forEach(button=>{
 
-    }
+        button.addEventListener("click",()=>{
 
-    languageButtons.forEach(button => {
+            Storage.set("language",button.dataset.language);
 
-        button.addEventListener("click", () => {
-
-            const language = button.dataset.language;
-
-            Storage.set("language", language);
-
-            window.location.href = "terms.html";
+            window.location.href="terms.html";
 
         });
 
@@ -42,11 +38,27 @@ function initializeLanguageSelection() {
 }
 
 /* ==========================================
-   NAVIGATION
+   TERMS
 ========================================== */
 
-function navigate(page) {
+function initializeTerms(){
 
-    window.location.href = page;
+    const checkbox=document.getElementById("agreeTerms");
+
+    const button=document.getElementById("continueButton");
+
+    if(!checkbox || !button) return;
+
+    checkbox.addEventListener("change",()=>{
+
+        button.disabled=!checkbox.checked;
+
+    });
+
+    button.addEventListener("click",()=>{
+
+        window.location.href="experience.html";
+
+    });
 
 }
