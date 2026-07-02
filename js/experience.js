@@ -819,23 +819,11 @@ function renderExperience() {
 
 async function initializeExperience() {
 
-    await initializeDatabase();
+    loadExperienceData();
 
     populateSelectors();
 
     renderExperience();
-
-    if (
-
-        typeof initializeTranslations ===
-
-        "function"
-
-    ) {
-
-        initializeTranslations();
-
-    }
 
 }
 
