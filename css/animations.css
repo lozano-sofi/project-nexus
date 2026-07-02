@@ -1,0 +1,334 @@
+/* ==========================================
+   PROJECT NEXUS
+   ANIMATIONS
+========================================== */
+
+/* ==========================================
+   FADE UP
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+/* ==========================================
+   FADE DOWN
+========================================== */
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-down{
+
+    animation:fadeDown .8s ease forwards;
+
+}
+
+/* ==========================================
+   FADE
+========================================== */
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.fade{
+
+    animation:fade .7s ease forwards;
+
+}
+
+/* ==========================================
+   SCALE
+========================================== */
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.92);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.scale{
+
+    animation:scaleIn .45s ease forwards;
+
+}
+
+/* ==========================================
+   SUN FLOAT
+========================================== */
+
+@keyframes sunFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:sunFloat 4s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   GLOW
+========================================== */
+
+@keyframes glow{
+
+    0%{
+
+        filter:drop-shadow(0 0 0 rgba(255,255,255,0));
+
+    }
+
+    50%{
+
+        filter:drop-shadow(0 0 18px rgba(255,255,255,.30));
+
+    }
+
+    100%{
+
+        filter:drop-shadow(0 0 0 rgba(255,255,255,0));
+
+    }
+
+}
+
+.glow{
+
+    animation:glow 3.5s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   BUTTON HOVER
+========================================== */
+
+.hover-lift{
+
+    transition:
+
+        transform .25s ease,
+
+        box-shadow .25s ease;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.hover-lift:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================================
+   LOADER
+========================================== */
+
+@keyframes loadingBar{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+.loading-bar{
+
+    animation:loadingBar 1s ease forwards;
+
+}
+
+/* ==========================================
+   CARD STAGGER
+========================================== */
+
+.stagger-1{
+
+    animation-delay:.08s;
+
+}
+
+.stagger-2{
+
+    animation-delay:.16s;
+
+}
+
+.stagger-3{
+
+    animation-delay:.24s;
+
+}
+
+.stagger-4{
+
+    animation-delay:.32s;
+
+}
+
+.stagger-5{
+
+    animation-delay:.40s;
+
+}
+
+.stagger-6{
+
+    animation-delay:.48s;
+
+}
+
+/* ==========================================
+   PANEL SLIDE
+========================================== */
+
+@keyframes slideRight{
+
+    from{
+
+        transform:translateX(100%);
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.slide-right{
+
+    animation:slideRight .35s ease forwards;
+
+}
+
+/* ==========================================
+   PULSE
+========================================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2.8s ease-in-out infinite;
+
+}
