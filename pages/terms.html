@@ -67,23 +67,37 @@
 
             </h1>
 
+            <p class="subtitle">
+
+                Customer Experience Simulator
+
+            </p>
+
         </header>
 
         <section class="message fade-up">
 
-            <h2 id="termsTitle">
+            <h2>
 
                 Terms of Use
 
             </h2>
 
-            <p id="termsDescription">
+            <p>
 
-                This prototype simulates the post-purchase customer experience through the Solar Eco mobile application.
+                This experience demonstrates how customer relationships evolve after a purchase through personalized interactions.
 
-                No personal information is collected, stored or transmitted.
+            </p>
 
-                All customer profiles, purchase history and communications are fictional and were created exclusively for demonstration purposes.
+            <p>
+
+                All customer names, purchase history, subscriptions and communications displayed throughout this prototype are entirely fictional and were created exclusively for demonstration purposes.
+
+            </p>
+
+            <p>
+
+                No personal information is collected, transmitted or stored while using this prototype.
 
             </p>
 
@@ -93,13 +107,13 @@
 
             <label class="glass agreement">
 
-                              <input
+                                <input
 
                     type="checkbox"
 
                     id="agreeTerms">
 
-                <span id="agreeText">
+                <span>
 
                     I have read and agree to continue.
 
@@ -128,26 +142,6 @@
 <script src="../js/storage.js"></script>
 
 <script src="../js/app.js"></script>
-
-<script>
-
-const checkbox = document.getElementById("agreeTerms");
-
-const button = document.getElementById("continueButton");
-
-checkbox.addEventListener("change", () => {
-
-    button.disabled = !checkbox.checked;
-
-});
-
-button.addEventListener("click", () => {
-
-    window.location.href = "experience.html";
-
-});
-
-</script>
 
 </body>
 
