@@ -1,0 +1,91 @@
+[
+  {
+    "id": "week-1",
+    "title": "Welcome to Solar Eco",
+    "description": "Your system has been installed successfully. We're monitoring the first days of production.",
+    "timeline": [
+      {
+        "title": "System Activated",
+        "description": "Your solar system is now generating clean energy."
+      },
+      {
+        "title": "First Production",
+        "description": "Congratulations! Your first kilowatt-hour has been generated."
+      },
+      {
+        "title": "Mobile App Ready",
+        "description": "Track your production, savings and support directly from the app."
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Complete your profile",
+        "description": "Add your contact preferences to receive personalized updates."
+      },
+      {
+        "title": "Enable notifications",
+        "description": "Receive alerts about production milestones and maintenance."
+      }
+    ]
+  },
+
+  {
+    "id": "month-6",
+    "title": "Six months together",
+    "description": "Your system has reached consistent performance and is generating excellent results.",
+    "timeline": [
+      {
+        "title": "Performance Review",
+        "description": "Production exceeded the original estimate."
+      },
+      {
+        "title": "Savings Milestone",
+        "description": "Your accumulated savings continue to grow every month."
+      },
+      {
+        "title": "Health Check",
+        "description": "All equipment is operating within expected parameters."
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Invite a friend",
+        "description": "Share your experience and receive exclusive benefits."
+      },
+      {
+        "title": "Review your dashboard",
+        "description": "Discover new insights about your energy consumption."
+      }
+    ]
+  },
+
+  {
+    "id": "year-5",
+    "title": "Five years of partnership",
+    "description": "Your relationship with Solar Eco has become a long-term success story.",
+    "timeline": [
+      {
+        "title": "5-Year Anniversary",
+        "description": "Thank you for trusting Solar Eco for the last five years."
+      },
+      {
+        "title": "Lifetime Savings",
+        "description": "Your accumulated savings reached a remarkable milestone."
+      },
+      {
+        "title": "Preventive Maintenance",
+        "description": "A routine inspection confirms your system remains in excellent condition."
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Battery Upgrade",
+        "description": "Increase your energy independence with a storage solution."
+      },
+      {
+        "title": "Premium Care",
+        "description": "Unlock priority support and annual optimization services."
+      }
+    ]
+  }
+]
