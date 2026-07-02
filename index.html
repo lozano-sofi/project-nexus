@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Nexus</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Splash -->
+    <section id="screen-splash" class="screen active">
+
+        <div class="logo">☀</div>
+
+        <h1>Solar Eco Solutions</h1>
+
+        <h2>Project Nexus</h2>
+
+        <p class="headline">
+            Selling ends with a contract.<br>
+            <strong>Trust doesn't.</strong>
+        </p>
+
+        <button id="startBtn">
+            Start Experience
+        </button>
+
+    </section>
+
+    <!-- Language -->
+    <section id="screen-language" class="screen">
+
+        <h2>Choose your language</h2>
+
+        <div class="language-buttons">
+
+            <button class="lang-btn" data-lang="en">
+                🇺🇸 English
+            </button>
+
+            <button class="lang-btn" data-lang="pt">
+                🇧🇷 Português
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Prototype Notice -->
+    <section id="screen-notice" class="screen">
+
+        <h2 id="noticeTitle">
+            Prototype Notice
+        </h2>
+
+        <p id="noticeText">
+            This interactive prototype simulates the post-purchase customer experience through the Solar Eco mobile application.
+        </p>
+
+        <label class="checkbox">
+
+            <input type="checkbox" id="agree">
+
+            <span id="agreeLabel">
+                I understand this is a conceptual prototype.
+            </span>
+
+        </label>
+
+        <button id="continueBtn" disabled>
+            Continue
+        </button>
+
+    </section>
+
+    <!-- Customer Selection -->
+    <section id="screen-profile" class="screen">
+
+        <h2 id="profileTitle">
+            Choose a customer profile
+        </h2>
+
+        <div class="profile-card">
+
+            <h3>Olivia Araújo</h3>
+
+            <p id="oliviaType">
+                Residential Customer
+            </p>
+
+            <button class="profile-btn">
+                Explore Olivia
+            </button>
+
+        </div>
+
+        <div class="profile-card">
+
+            <h3>Leonardo Martins</h3>
+
+            <p id="leoType">
+                Commercial Customer
+            </p>
+
+            <button class="profile-btn">
+                Explore Leonardo
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="scripts/app.js"></script>
+
+</body>
+</html>
