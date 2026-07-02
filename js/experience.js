@@ -888,19 +888,3 @@ window.Experience = {
     populateSelectors
 
 };
-
-/* ==========================================
-   READY
-========================================== */
-
-document.addEventListener(
-
-    "DOMContentLoaded",
-
-    () => {
-
-        initializeExperience();
-
-    }
-
-);
