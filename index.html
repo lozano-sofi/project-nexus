@@ -1,144 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Nexus</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Solar Eco Solutions | Project Nexus</title>
+
+    <meta
+        name="description"
+        content="Project Nexus — Customer Experience Simulator">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="css/main.css">
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="background-glow"></div>
 
-    <!-- Splash -->
-    <section id="screen-splash" class="screen active">
+<main class="hero">
 
-    <div class="hero">
-
-     <div class="logo">☀</div>
+    <section class="hero-content">
 
         <div class="brand">
 
-            <h1>Solar Eco Solutions</h1>
+            <div class="logo">
 
-            <h2>Project Nexus</h2>
+                ☀
 
-        </div>
+            </div>
 
-        <p class="headline">
-    Selling ends
-    <br>
-    with a contract.
-    <br><br>
-    <strong>
-        Trust
-        <br>
-        doesn't.
-    </strong>
-        </p>
-        
-    </div>
+            <span class="company">
 
-    <button id="startBtn">
+                Solar Eco Solutions
 
-        Start Experience
-
-    </button>
-
-    </section>
-
-    <!-- Language -->
-    <section id="screen-language" class="screen">
-
-        <h2>Choose your language</h2>
-
-        <div class="language-buttons">
-
-            <button class="lang-btn" data-lang="en">
-                🇺🇸 English
-            </button>
-
-            <button class="lang-btn" data-lang="pt">
-                🇧🇷 Português
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- Prototype Notice -->
-    <section id="screen-notice" class="screen">
-
-        <h2 id="noticeTitle">
-            Prototype Notice
-        </h2>
-
-        <p id="noticeText">
-            This interactive prototype simulates the post-purchase customer experience through the Solar Eco mobile application.
-        </p>
-
-        <label class="checkbox">
-
-            <input type="checkbox" id="agree">
-
-            <span id="agreeLabel">
-                I understand this is a conceptual prototype.
             </span>
 
-        </label>
+            <h1>
 
-        <button id="continueBtn" disabled>
-            Continue
-        </button>
+                Project Nexus
 
-    </section>
+            </h1>
 
-    <!-- Customer Selection -->
-    <section id="screen-profile" class="screen">
+            <p class="subtitle">
 
-        <h2 id="profileTitle">
-            Choose a customer profile
-        </h2>
+                Customer Experience Simulator
 
-        <div class="profile-card">
-
-            <h3>Olivia Araújo</h3>
-
-            <p id="oliviaType">
-                Residential Customer
             </p>
-
-            <button class="profile-btn">
-                Explore Olivia
-            </button>
 
         </div>
 
-        <div class="profile-card">
+        <section class="message">
 
-            <h3>Leonardo Martins</h3>
+            <h2>
 
-            <p id="leoType">
-                Commercial Customer
-            </p>
+                Selling ends with a contract.
 
-            <button class="profile-btn">
-                Explore Leonardo
-            </button>
+            </h2>
 
-        </div>
+            <h2>
+
+                <strong>
+
+                    Trust doesn't.
+
+                </strong>
+
+            </h2>
+
+        </section>
 
     </section>
 
-</div>
 
-<script src="scripts/app.js"></script>
+        <section class="hero-actions">
+
+            <a
+                href="pages/language.html"
+                class="primary-button">
+
+                Start Experience
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>
+
+            Project Nexus is an interactive prototype designed to
+            demonstrate how customer data can become meaningful
+            customer relationships.
+
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
