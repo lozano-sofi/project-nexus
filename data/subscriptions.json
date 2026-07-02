@@ -1,0 +1,14 @@
+[
+  {
+    "subscriptionId": 501,
+    "customerId": 1234,
+    "emailSubscriptionStatus": "Subscribed",
+    "subscriptionDate": "2021-03-18"
+  },
+  {
+    "subscriptionId": 502,
+    "customerId": 5678,
+    "emailSubscriptionStatus": "Subscribed",
+    "subscriptionDate": "2016-08-14"
+  }
+]
