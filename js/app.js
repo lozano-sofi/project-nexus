@@ -3,35 +3,155 @@
    APPLICATION
 ========================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener(
 
-    initializeStorage();
+    "DOMContentLoaded",
 
-    initializeLanguageSelection();
+    async () => {
 
-    initializeTerms();
+        initializeStorage();
 
-});
+        const page =
+
+            window.location.pathname
+
+                .split("/")
+
+                .pop();
+
+        switch (page) {
+
+            case "language.html":
+
+                initializeLanguageSelection();
+
+                break;
+
+            case "terms.html":
+
+                initializeTerms();
+
+                break;
+
+            case "experience.html":
+
+                try {
+
+                    await initializeDatabase();
+
+                    if (
+
+                        typeof Loader !==
+
+                        "undefined"
+
+                    ) {
+
+                        Loader.initialize();
+
+                    }
+
+                    if (
+
+                        typeof initializeTranslations ===
+
+                        "function"
+
+                    ) {
+
+                        initializeTranslations();
+
+                    }
+
+                    if (
+
+                        typeof Experience !==
+
+                        "undefined"
+
+                    ) {
+
+                        Experience.initialize();
+
+                    }
+
+                    if (
+
+                        typeof Controls !==
+
+                        "undefined"
+
+                    ) {
+
+                        Controls.initialize();
+
+                    }
+
+                }
+
+                catch (error) {
+
+                    console.error(
+
+                        "Project Nexus initialization error:",
+
+                        error
+
+                    );
+
+                }
+
+                break;
+
+        }
+
+    }
+
+);
 
 /* ==========================================
    LANGUAGE
 ========================================== */
 
-function initializeLanguageSelection(){
+function initializeLanguageSelection() {
 
-    const buttons=document.querySelectorAll("[data-language]");
+    const buttons =
 
-    if(!buttons.length) return;
+        document.querySelectorAll(
 
-    buttons.forEach(button=>{
+            "[data-language]"
 
-        button.addEventListener("click",()=>{
+        );
 
-            Storage.set("language",button.dataset.language);
+    if (!buttons.length) {
 
-            window.location.href="terms.html";
+        return;
 
-        });
+    }
+
+    buttons.forEach(button => {
+
+        button.addEventListener(
+
+            "click",
+
+            () => {
+
+                Storage.set(
+
+                    "language",
+
+                    button.dataset.language
+
+                );
+
+                window.location.href =
+
+                    "terms.html";
+
+            }
+
+        );
 
     });
 
@@ -41,24 +161,62 @@ function initializeLanguageSelection(){
    TERMS
 ========================================== */
 
-function initializeTerms(){
+function initializeTerms() {
 
-    const checkbox=document.getElementById("agreeTerms");
+    const checkbox =
 
-    const button=document.getElementById("continueButton");
+        document.getElementById(
 
-    if(!checkbox || !button) return;
+            "agreeTerms"
 
-    checkbox.addEventListener("change",()=>{
+        );
 
-        button.disabled=!checkbox.checked;
+    const button =
 
-    });
+        document.getElementById(
 
-    button.addEventListener("click",()=>{
+            "continueButton"
 
-        window.location.href="experience.html";
+        );
 
-    });
+    if (
 
-}
+        !checkbox ||
+
+        !button
+
+    ) {
+
+        return;
+
+    }
+
+    checkbox.addEventListener(
+
+        "change",
+
+        () => {
+
+            button.disabled =
+
+                !checkbox.checked;
+
+        }
+
+    );
+
+    button.addEventListener(
+
+        "click",
+
+        () => {
+
+            window.location.href =
+
+                "experience.html";
+
+        }
+
+    );
+
+                       }
