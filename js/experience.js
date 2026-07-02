@@ -683,6 +683,14 @@ function refreshExperience() {
 
     loadExperienceData();
 
+    if (!Experience.customer) {
+
+        console.warn("Customer not found.");
+
+        return;
+
+    }
+
     renderHeader();
 
     renderHero();
@@ -692,6 +700,8 @@ function refreshExperience() {
     renderCustomerInformation();
 
     renderContent();
+
+    synchronizeSelectors();
 
 }
 
@@ -823,11 +833,31 @@ function renderExperience() {
 
 async function initializeExperience() {
 
+    if (typeof Loader !== "undefined") {
+
+        Loader.show();
+
+    }
+
     loadExperienceData();
 
     populateSelectors();
 
+    synchronizeSelectors();
+
     renderExperience();
+
+    if (typeof refreshTranslations === "function") {
+
+        refreshTranslations();
+
+    }
+
+    if (typeof Loader !== "undefined") {
+
+        Loader.hide();
+
+    }
 
 }
 
@@ -836,6 +866,18 @@ async function initializeExperience() {
 ========================================== */
 
 window.Experience = {
+
+    initialize: initializeExperience,
+
+    render: renderExperience,
+
+    refresh: refreshExperience,
+
+    changeCustomer,
+
+    changeJourney,
+
+    populateSelectors,
 
     getCustomer() {
 
@@ -861,22 +903,10 @@ window.Experience = {
 
     },
 
-   state() {
+    getState() {
 
-    return Experience;
+        return Experience;
 
-},
-
-    render: renderExperience,
-
-    refresh: updateExperience,
-
-    initialize: initializeExperience,
-
-    changeCustomer,
-
-    changeJourney,
-
-    populateSelectors
+    }
 
 };
