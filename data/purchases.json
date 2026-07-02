@@ -1,0 +1,70 @@
+[
+  {
+    "customerId": 1001,
+    "purchases": [
+      {
+        "id": "PUR-10001",
+        "date": "2019-03-12",
+        "product": "Solar Eco Residential Kit 6.4 kWp",
+        "category": "Solar System",
+        "status": "Active",
+        "value": 18490,
+        "currency": "USD",
+        "warrantyUntil": "2044-03-12"
+      },
+      {
+        "id": "PUR-10002",
+        "date": "2020-08-18",
+        "product": "Smart Energy Monitor",
+        "category": "Accessory",
+        "status": "Installed",
+        "value": 590,
+        "currency": "USD",
+        "warrantyUntil": "2025-08-18"
+      },
+      {
+        "id": "PUR-10003",
+        "date": "2023-05-09",
+        "product": "Annual Preventive Maintenance",
+        "category": "Service",
+        "status": "Completed",
+        "value": 249,
+        "currency": "USD"
+      }
+    ]
+  },
+
+  {
+    "customerId": 1002,
+    "purchases": [
+      {
+        "id": "PUR-20001",
+        "date": "2021-07-15",
+        "product": "Commercial Solar System 38 kWp",
+        "category": "Solar System",
+        "status": "Active",
+        "value": 74200,
+        "currency": "USD",
+        "warrantyUntil": "2046-07-15"
+      },
+      {
+        "id": "PUR-20002",
+        "date": "2022-02-10",
+        "product": "Commercial Energy Monitoring",
+        "category": "Software",
+        "status": "Active",
+        "value": 1890,
+        "currency": "USD"
+      },
+      {
+        "id": "PUR-20003",
+        "date": "2024-01-22",
+        "product": "Performance Optimization Visit",
+        "category": "Service",
+        "status": "Completed",
+        "value": 890,
+        "currency": "USD"
+      }
+    ]
+  }
+]
