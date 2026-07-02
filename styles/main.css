@@ -173,11 +173,11 @@ h2{
 
 .headline{
 
-    margin-top:15px;
+    margin-top:20px;
 
     margin-bottom:0;
 
-    font-size:18px;
+    font-size:22px;
 
     line-height:1.35;
 
@@ -514,7 +514,7 @@ button:disabled{
 
     margin-top:auto;
 
-    margin-bottom:90px;
+    margin-bottom:80px;
 
 }
 
