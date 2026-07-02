@@ -1,0 +1,50 @@
+{
+    "en":{
+
+        "goodAfternoon":"Good afternoon.",
+
+        "running":"Everything is running smoothly.",
+
+        "todayProduction":"Today's Production",
+
+        "totalSavings":"Total Savings",
+
+        "environment":"Environmental Impact",
+
+        "recommendation":"Recommended for You",
+
+        "journey":"Your Solar Journey",
+
+        "schedule":"Schedule Now",
+
+        "timeline":"View Timeline",
+
+        "apply":"Apply Changes"
+
+    },
+
+    "pt":{
+
+        "goodAfternoon":"Boa tarde.",
+
+        "running":"Tudo está funcionando perfeitamente.",
+
+        "todayProduction":"Produção de Hoje",
+
+        "totalSavings":"Economia Total",
+
+        "environment":"Impacto Ambiental",
+
+        "recommendation":"Recomendado para Você",
+
+        "journey":"Sua Jornada Solar",
+
+        "schedule":"Agendar Agora",
+
+        "timeline":"Ver Jornada",
+
+        "apply":"Aplicar Alterações"
+
+    }
+
+}
