@@ -41,13 +41,17 @@
 
     <div>
 
-        <h3 id="greeting">
+        <h3
+            id="greeting"
+            data-i18n="app.greeting">
 
             Good afternoon 👋
 
         </h3>
 
-        <p id="lastSync">
+        <p
+            id="lastSync"
+            data-i18n="app.lastSync">
 
             Last sync • Just now
 
@@ -65,12 +69,12 @@
 
 </header>
 
-
 <section class="profile-bar glass">
 
     <div>
 
-        <small>
+        <small
+            data-i18n="profile.title">
 
             Experience Profile
 
@@ -93,24 +97,29 @@
 
 </section>
 
-
 <main id="content">
 
 <section class="hero-card glass">
 
-    <span class="hero-label">
+    <span
+        class="hero-label"
+        data-i18n="hero.label">
 
         Customer Journey
 
     </span>
 
-    <h1 id="journeyTitle">
+    <h1
+        id="journeyTitle"
+        data-i18n="hero.title">
 
         Welcome back.
 
     </h1>
 
-    <p id="journeyText">
+    <p
+        id="journeyText"
+        data-i18n="hero.description">
 
         Your solar ecosystem is operating perfectly.
         Here are today's highlights.
@@ -119,12 +128,12 @@
 
 </section>
 
-
 <section class="metrics-grid">
 
     <article class="metric glass">
 
-        <small>
+        <small
+            data-i18n="metrics.savings">
 
             Savings
 
@@ -140,7 +149,8 @@
 
     <article class="metric glass">
 
-        <small>
+        <small
+            data-i18n="metrics.energy">
 
             Energy
 
@@ -156,7 +166,8 @@
 
     <article class="metric glass">
 
-        <small>
+        <small
+            data-i18n="metrics.co2">
 
             CO₂ Avoided
 
@@ -172,7 +183,8 @@
 
     <article class="metric glass">
 
-        <small>
+        <small
+            data-i18n="metrics.relationship">
 
             Relationship
 
@@ -188,11 +200,12 @@
 
 </section>
 
-  <section class="timeline-section">
+<section class="timeline-section">
 
     <div class="section-title">
 
-        <h2>
+        <h2
+            data-i18n="sections.timeline">
 
             Journey Timeline
 
@@ -208,12 +221,12 @@
 
 </section>
 
-
-<section class="recommendation-section">
+    <section class="recommendation-section">
 
     <div class="section-title">
 
-        <h2>
+        <h2
+            data-i18n="sections.recommendations">
 
             Recommended For You
 
@@ -229,12 +242,12 @@
 
 </section>
 
-
 <section class="activity-section">
 
     <div class="section-title">
 
-        <h2>
+        <h2
+            data-i18n="sections.activity">
 
             Recent Activity
 
@@ -250,12 +263,12 @@
 
 </section>
 
-
 <section class="customer-section">
 
     <div class="section-title">
 
-        <h2>
+        <h2
+            data-i18n="sections.customer">
 
             Customer Information
 
@@ -267,7 +280,8 @@
 
         <div class="info-item">
 
-            <span>
+            <span
+                data-i18n="customer.id">
 
                 Customer ID
 
@@ -283,7 +297,8 @@
 
         <div class="info-item">
 
-            <span>
+            <span
+                data-i18n="customer.name">
 
                 Customer
 
@@ -299,7 +314,8 @@
 
         <div class="info-item">
 
-            <span>
+            <span
+                data-i18n="customer.installation">
 
                 Installation
 
@@ -315,7 +331,8 @@
 
         <div class="info-item">
 
-            <span>
+            <span
+                data-i18n="customer.plan">
 
                 Plan
 
@@ -331,7 +348,8 @@
 
         <div class="info-item">
 
-            <span>
+            <span
+                data-i18n="customer.contact">
 
                 Preferred Contact
 
@@ -347,7 +365,8 @@
 
         <div class="info-item">
 
-            <span>
+            <span
+                data-i18n="customer.score">
 
                 Satisfaction
 
@@ -365,11 +384,12 @@
 
 </section>
 
-  <section class="insights-section">
+<section class="insights-section">
 
     <div class="section-title">
 
-        <h2>
+        <h2
+            data-i18n="sections.insights">
 
             Financial Insights
 
@@ -393,7 +413,8 @@
 
     <div class="controls-header">
 
-        <h2>
+        <h2
+            data-i18n="controls.title">
 
             Experience Controls
 
@@ -409,11 +430,12 @@
 
     </div>
 
-    <div class="controls-body">
+        <div class="controls-body">
 
         <div class="control-group">
 
-            <label>
+            <label
+                data-i18n="controls.customer">
 
                 Customer
 
@@ -427,7 +449,8 @@
 
         <div class="control-group">
 
-            <label>
+            <label
+                data-i18n="controls.journey">
 
                 Journey Stage
 
@@ -441,7 +464,8 @@
 
         <div class="control-group">
 
-            <label>
+            <label
+                data-i18n="controls.language">
 
                 Language
 
@@ -467,7 +491,8 @@
 
         <button
             id="applyControls"
-            class="primary-button">
+            class="primary-button"
+            data-i18n="controls.apply">
 
             Apply Changes
 
@@ -485,7 +510,8 @@
 
     </div>
 
-    <p>
+    <p
+        data-i18n="loader.loading">
 
         Loading experience...
 
@@ -493,11 +519,12 @@
 
 </div>
 
-  <nav class="bottom-navigation">
+<nav class="bottom-navigation">
 
     <button
         class="nav-item active"
-        data-view="today">
+        data-view="today"
+        data-i18n="navigation.today">
 
         Today
 
@@ -505,7 +532,8 @@
 
     <button
         class="nav-item"
-        data-view="insights">
+        data-view="insights"
+        data-i18n="navigation.insights">
 
         Insights
 
@@ -513,7 +541,8 @@
 
     <button
         class="nav-item"
-        data-view="care">
+        data-view="care"
+        data-i18n="navigation.care">
 
         Care
 
@@ -521,7 +550,8 @@
 
     <button
         class="nav-item"
-        data-view="rewards">
+        data-view="rewards"
+        data-i18n="navigation.rewards">
 
         Rewards
 
@@ -529,7 +559,8 @@
 
     <button
         class="nav-item"
-        data-view="profile">
+        data-view="profile"
+        data-i18n="navigation.profile">
 
         You
 
@@ -539,7 +570,7 @@
 
 </div>
 
-<script src="../js/storage.js"></script>
+    <script src="../js/storage.js"></script>
 
 <script src="../js/database.js"></script>
 
