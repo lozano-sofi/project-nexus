@@ -514,7 +514,7 @@ button:disabled{
 
     margin-top:auto;
 
-    margin-bottom:55px;
+    margin-bottom:80px;
 
 }
 
@@ -533,18 +533,6 @@ h1{
 h2{
 
     margin-top:12px;
-
-}
-
-.headline{
-
-    margin-top:60px;
-
-    margin-bottom:0;
-
-    font-size:36px;
-
-    line-height:1.35;
 
 }
 
