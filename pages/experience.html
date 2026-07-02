@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Project Nexus</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="../css/global.css">
+
+    <link rel="stylesheet"
+          href="../css/animations.css">
+
+    <link rel="stylesheet"
+          href="../css/experience.css">
+
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="app">
+
+<header class="topbar">
+
+    <div>
+
+        <h3 id="greeting">
+
+            Good afternoon 👋
+
+        </h3>
+
+        <p id="lastSync">
+
+            Last sync • Just now
+
+        </p>
+
+    </div>
+
+    <button
+        id="settingsButton"
+        class="icon-button">
+
+        ⚙
+
+    </button>
+
+</header>
+
+
+<section class="profile-bar glass">
+
+    <div>
+
+        <small>
+
+            Experience Profile
+
+        </small>
+
+        <h2 id="profileName">
+
+            Olivia
+
+        </h2>
+
+    </div>
+
+    <button
+        id="changeProfile">
+
+        ▼
+
+    </button>
+
+</section>
+
+
+<main id="content">
+
+<section class="hero-card glass">
+
+    <span class="hero-label">
+
+        Customer Journey
+
+    </span>
+
+    <h1 id="journeyTitle">
+
+        Welcome back.
+
+    </h1>
+
+    <p id="journeyText">
+
+        Your solar ecosystem is operating perfectly.
+        Here are today's highlights.
+
+    </p>
+
+</section>
+
+
+<section class="metrics-grid">
+
+    <article class="metric glass">
+
+        <small>
+
+            Savings
+
+        </small>
+
+        <strong id="savingValue">
+
+            $12,480
+
+        </strong>
+
+    </article>
+
+    <article class="metric glass">
+
+        <small>
+
+            Energy
+
+        </small>
+
+        <strong id="energyValue">
+
+            38,250 kWh
+
+        </strong>
+
+    </article>
+
+    <article class="metric glass">
+
+        <small>
+
+            CO₂ Avoided
+
+        </small>
+
+        <strong id="co2Value">
+
+            14.8 t
+
+        </strong>
+
+    </article>
+
+    <article class="metric glass">
+
+        <small>
+
+            Relationship
+
+        </small>
+
+        <strong id="yearsValue">
+
+            5 Years
+
+        </strong>
+
+    </article>
+
+</section>
+
+  <section class="timeline-section">
+
+    <div class="section-title">
+
+        <h2>
+
+            Journey Timeline
+
+        </h2>
+
+    </div>
+
+    <div
+        id="timelineContainer"
+        class="timeline">
+
+    </div>
+
+</section>
+
+
+<section class="recommendation-section">
+
+    <div class="section-title">
+
+        <h2>
+
+            Recommended For You
+
+        </h2>
+
+    </div>
+
+    <div
+        id="recommendationContainer"
+        class="recommendation-list">
+
+    </div>
+
+</section>
+
+
+<section class="activity-section">
+
+    <div class="section-title">
+
+        <h2>
+
+            Recent Activity
+
+        </h2>
+
+    </div>
+
+    <div
+        id="activityContainer"
+        class="activity-list">
+
+    </div>
+
+</section>
+
+
+<section class="customer-section">
+
+    <div class="section-title">
+
+        <h2>
+
+            Customer Information
+
+        </h2>
+
+    </div>
+
+    <div class="customer-card glass">
+
+        <div class="info-item">
+
+            <span>
+
+                Customer ID
+
+            </span>
+
+            <strong id="customerId">
+
+                —
+
+            </strong>
+
+        </div>
+
+        <div class="info-item">
+
+            <span>
+
+                Customer
+
+            </span>
+
+            <strong id="customerName">
+
+                —
+
+            </strong>
+
+        </div>
+
+        <div class="info-item">
+
+            <span>
+
+                Installation
+
+            </span>
+
+            <strong id="installationDate">
+
+                —
+
+            </strong>
+
+        </div>
+
+        <div class="info-item">
+
+            <span>
+
+                Plan
+
+            </span>
+
+            <strong id="subscriptionPlan">
+
+                —
+
+            </strong>
+
+        </div>
+
+        <div class="info-item">
+
+            <span>
+
+                Preferred Contact
+
+            </span>
+
+            <strong id="preferredContact">
+
+                —
+
+            </strong>
+
+        </div>
+
+        <div class="info-item">
+
+            <span>
+
+                Satisfaction
+
+            </span>
+
+            <strong id="customerScore">
+
+                —
+
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <section class="insights-section">
+
+    <div class="section-title">
+
+        <h2>
+
+            Financial Insights
+
+        </h2>
+
+    </div>
+
+    <div
+        id="insightsContainer"
+        class="insights-list">
+
+    </div>
+
+</section>
+
+</main>
+
+<aside
+    id="controlsPanel"
+    class="controls-panel">
+
+    <div class="controls-header">
+
+        <h2>
+
+            Experience Controls
+
+        </h2>
+
+        <button
+            id="closeControls"
+            class="icon-button">
+
+            ✕
+
+        </button>
+
+    </div>
+
+    <div class="controls-body">
+
+        <div class="control-group">
+
+            <label>
+
+                Customer
+
+            </label>
+
+            <select id="customerSelector">
+
+            </select>
+
+        </div>
+
+        <div class="control-group">
+
+            <label>
+
+                Journey Stage
+
+            </label>
+
+            <select id="journeySelector">
+
+            </select>
+
+        </div>
+
+        <div class="control-group">
+
+            <label>
+
+                Language
+
+            </label>
+
+            <select id="languageSelector">
+
+                <option value="en">
+
+                    English
+
+                </option>
+
+                <option value="pt">
+
+                    Português
+
+                </option>
+
+            </select>
+
+        </div>
+
+        <button
+            id="applyControls"
+            class="primary-button">
+
+            Apply Changes
+
+        </button>
+
+    </div>
+
+</aside>
+
+<div
+    id="experienceLoader"
+    class="loader hidden">
+
+    <div class="loader-spinner">
+
+    </div>
+
+    <p>
+
+        Loading experience...
+
+    </p>
+
+</div>
+
+  <nav class="bottom-navigation">
+
+    <button
+        class="nav-item active"
+        data-view="today">
+
+        Today
+
+    </button>
+
+    <button
+        class="nav-item"
+        data-view="insights">
+
+        Insights
+
+    </button>
+
+    <button
+        class="nav-item"
+        data-view="care">
+
+        Care
+
+    </button>
+
+    <button
+        class="nav-item"
+        data-view="rewards">
+
+        Rewards
+
+    </button>
+
+    <button
+        class="nav-item"
+        data-view="profile">
+
+        You
+
+    </button>
+
+</nav>
+
+</div>
+
+<script src="../js/storage.js"></script>
+
+<script src="../js/database.js"></script>
+
+<script src="../js/translations.js"></script>
+
+<script src="../js/loader.js"></script>
+
+<script src="../js/controls.js"></script>
+
+<script src="../js/experience.js"></script>
+
+<script src="../js/app.js"></script>
+
+</body>
+
+</html>
