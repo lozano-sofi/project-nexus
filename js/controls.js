@@ -226,19 +226,3 @@ window.Controls = {
     initialize: initializeControls
 
 };
-
-/* ==========================================
-   READY
-========================================== */
-
-document.addEventListener(
-
-    "DOMContentLoaded",
-
-    () => {
-
-        initializeControls();
-
-    }
-
-);
