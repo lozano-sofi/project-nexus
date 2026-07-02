@@ -1,0 +1,280 @@
+/* ==========================================
+   PROJECT NEXUS
+   GLOBAL STYLES
+========================================== */
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    min-height:100vh;
+
+    color:#FFFFFF;
+
+    background:
+    radial-gradient(circle at bottom,#FBBF24 0%,transparent 35%),
+    linear-gradient(
+        180deg,
+        #FDBA2D 0%,
+        #F97316 45%,
+        #EA580C 100%
+    );
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    --white:#FFFFFF;
+
+    --glass:rgba(255,255,255,.12);
+
+    --glass-border:rgba(255,255,255,.18);
+
+    --shadow:
+
+        0 16px 40px rgba(0,0,0,.15);
+
+    --orange:#F97316;
+
+    --orange-dark:#EA580C;
+
+    --yellow:#FDBA2D;
+
+    --text-soft:rgba(255,255,255,.82);
+
+    --transition:.30s ease;
+
+    --radius:26px;
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.primary-button{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    height:64px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:var(--orange);
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.primary-button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.primary-button:active{
+
+    transform:scale(.98);
+
+}
+/* ==========================================
+   TYPOGRAPHY
+========================================== */
+
+h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+h2{
+
+    font-size:34px;
+
+    font-weight:600;
+
+    line-height:1.25;
+
+}
+
+h3{
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+p{
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   CONTAINERS
+========================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:430px;
+
+    min-height:100vh;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+/* ==========================================
+   GLASS EFFECT
+========================================== */
+
+.glass{
+
+    background:var(--glass);
+
+    border:1px solid var(--glass-border);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    width:100%;
+
+    padding:24px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    color:rgba(255,255,255,.70);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:430px){
+
+    h1{
+
+        font-size:36px;
+
+    }
+
+    h2{
+
+        font-size:28px;
+
+    }
+
+    .container{
+
+        padding:28px 24px;
+
+    }
+
+    .primary-button{
+
+        height:60px;
+
+        font-size:17px;
+
+    }
+
+}
