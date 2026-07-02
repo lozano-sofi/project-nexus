@@ -118,27 +118,42 @@ const Elements = {
 
 function loadExperienceData() {
 
-    Experience.customer = getCurrentCustomer() || null;
+    Experience.customer =
+        getCurrentCustomer() ?? null;
 
-    Experience.journey = getCurrentJourney() || null;
+    Experience.journey =
+        getCurrentJourney() ?? null;
 
-    Experience.purchases = getCurrentPurchases() || {
+    Experience.purchases =
+        getCurrentPurchases() ?? {
 
-        purchases: []
+            purchases: []
 
-    };
+        };
 
-    Experience.subscription = getCurrentSubscription() || {
+    Experience.subscription =
+        getCurrentSubscription() ?? {
 
-        subscription: {}
+            subscription: {
 
-    };
+                planName: "—",
+
+                currency: "",
+
+                price: "",
+
+                renewalDate: "—"
+
+            }
+
+        };
 
 }
 
 /* ==========================================
    HEADER
 ========================================== */
+
 function updateLastSync() {
 
     if (!Elements.lastSync) {
@@ -147,14 +162,11 @@ function updateLastSync() {
 
     }
 
-    const now = new Date();
-
     Elements.lastSync.textContent =
 
-        `Last sync • ${now.toLocaleTimeString()}`;
+        `Last sync • ${new Date().toLocaleTimeString()}`;
 
 }
-
 
 function renderHeader() {
 
@@ -165,15 +177,27 @@ function renderHeader() {
     }
 
     const dashboard =
-        Experience.customer.dashboard;
 
-    Elements.greeting.textContent =
-        dashboard.greeting;
+        Experience.customer.dashboard || {};
+
+    if (Elements.greeting) {
+
+        Elements.greeting.textContent =
+
+            dashboard.greeting || "";
+
+    }
+
+    if (Elements.profileName) {
+
+        Elements.profileName.textContent =
+
+            Experience.customer.name
+                ?.split(" ")[0] || "";
+
+    }
 
     updateLastSync();
-
-    Elements.profileName.textContent =
-        Experience.customer.name.split(" ")[0];
 
 }
 
@@ -184,8 +208,11 @@ function renderHeader() {
 function renderHero() {
 
     if (
+
         !Experience.customer ||
+
         !Experience.journey
+
     ) {
 
         return;
@@ -193,13 +220,24 @@ function renderHero() {
     }
 
     const dashboard =
-        Experience.customer.dashboard;
 
-    Elements.journeyTitle.textContent =
-        dashboard.heroTitle;
+        Experience.customer.dashboard || {};
 
-    Elements.journeyText.textContent =
-        dashboard.heroText;
+    if (Elements.journeyTitle) {
+
+        Elements.journeyTitle.textContent =
+
+            dashboard.heroTitle || "";
+
+    }
+
+    if (Elements.journeyText) {
+
+        Elements.journeyText.textContent =
+
+            dashboard.heroText || "";
+
+    }
 
 }
 
@@ -216,19 +254,32 @@ function renderMetrics() {
     }
 
     const dashboard =
-        Experience.customer.dashboard;
 
-    Elements.savingValue.textContent =
-        dashboard.savings;
+        Experience.customer.dashboard || {};
 
-    Elements.energyValue.textContent =
-        dashboard.energy;
+    if (Elements.savingValue)
 
-    Elements.co2Value.textContent =
-        dashboard.co2;
+        Elements.savingValue.textContent =
 
-    Elements.yearsValue.textContent =
-        dashboard.relationship;
+            dashboard.savings || "—";
+
+    if (Elements.energyValue)
+
+        Elements.energyValue.textContent =
+
+            dashboard.energy || "—";
+
+    if (Elements.co2Value)
+
+        Elements.co2Value.textContent =
+
+            dashboard.co2 || "—";
+
+    if (Elements.yearsValue)
+
+        Elements.yearsValue.textContent =
+
+            dashboard.relationship || "—";
 
 }
 
@@ -238,34 +289,51 @@ function renderMetrics() {
 
 function renderCustomerInformation() {
 
-    if (
-        !Experience.customer ||
-        !Experience.subscription
-    ) {
+    if (!Experience.customer) {
 
         return;
 
     }
 
-    Elements.customerId.textContent =
-        Experience.customer.id;
+    const subscription =
 
-    Elements.customerName.textContent =
-        Experience.customer.name;
+        Experience.subscription?.subscription || {};
 
-    Elements.installationDate.textContent =
-        Experience.customer.memberSince;
+    if (Elements.customerId)
 
-    Elements.subscriptionPlan.textContent =
-        Experience.subscription
-            .subscription
-            .planName;
+        Elements.customerId.textContent =
 
-    Elements.preferredContact.textContent =
-        Experience.customer.preferredContact;
+            Experience.customer.id || "—";
 
-    Elements.customerScore.textContent =
-        `${Experience.customer.satisfaction}%`;
+    if (Elements.customerName)
+
+        Elements.customerName.textContent =
+
+            Experience.customer.name || "—";
+
+    if (Elements.installationDate)
+
+        Elements.installationDate.textContent =
+
+            Experience.customer.memberSince || "—";
+
+    if (Elements.subscriptionPlan)
+
+        Elements.subscriptionPlan.textContent =
+
+            subscription.planName || "—";
+
+    if (Elements.preferredContact)
+
+        Elements.preferredContact.textContent =
+
+            Experience.customer.preferredContact || "—";
+
+    if (Elements.customerScore)
+
+        Elements.customerScore.textContent =
+
+            `${Experience.customer.satisfaction || 0}%`;
 
 }
 
