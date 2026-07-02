@@ -10,9 +10,7 @@
     },
 
     "hero": {
-      "label": "Customer Journey",
-      "title": "Welcome back.",
-      "description": "Your solar ecosystem is operating perfectly."
+      "label": "Customer Journey"
     },
 
     "metrics": {
@@ -71,9 +69,7 @@
     },
 
     "hero": {
-      "label": "Jornada do Cliente",
-      "title": "Bem-vindo novamente.",
-      "description": "Seu ecossistema solar está funcionando perfeitamente."
+      "label": "Jornada do Cliente"
     },
 
     "metrics": {
