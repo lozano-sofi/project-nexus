@@ -1,5 +1,5 @@
-[
-  {
+
+{
   "id": "week-1",
 
   "title": {
@@ -67,64 +67,142 @@
       }
     }
   ]
-  }
-  {
-    "id": "month-6",
-    "title": "Six months together",
-    "description": "Your system has reached consistent performance and is generating excellent results.",
-    "timeline": [
-      {
-        "title": "Performance Review",
-        "description": "Production exceeded the original estimate."
-      },
-      {
-        "title": "Savings Milestone",
-        "description": "Your accumulated savings continue to grow every month."
-      },
-      {
-        "title": "Health Check",
-        "description": "All equipment is operating within expected parameters."
-      }
-    ],
-    "recommendations": [
-      {
-        "title": "Invite a friend",
-        "description": "Share your experience and receive exclusive benefits."
-      },
-      {
-        "title": "Review your dashboard",
-        "description": "Discover new insights about your energy consumption."
-      }
-    ]
+}
+{
+  "id": "month-6",
+
+  "title": {
+    "en": "Six months together",
+    "pt": "Seis meses juntos"
   },
 
-  {
-    "id": "year-5",
-    "title": "Five years of partnership",
-    "description": "Your relationship with Solar Eco has become a long-term success story.",
-    "timeline": [
-      {
-        "title": "5-Year Anniversary",
-        "description": "Thank you for trusting Solar Eco for the last five years."
+  "description": {
+    "en": "Your system has reached consistent performance and is generating excellent results.",
+    "pt": "Seu sistema alcançou um desempenho consistente e está gerando excelentes resultados."
+  },
+
+  "timeline": [
+    {
+      "title": {
+        "en": "Performance Review",
+        "pt": "Revisão de Desempenho"
       },
-      {
-        "title": "Lifetime Savings",
-        "description": "Your accumulated savings reached a remarkable milestone."
-      },
-      {
-        "title": "Preventive Maintenance",
-        "description": "A routine inspection confirms your system remains in excellent condition."
+      "description": {
+        "en": "Production exceeded the original estimate.",
+        "pt": "A geração superou a estimativa original."
       }
-    ],
-    "recommendations": [
-      {
-        "title": "Battery Upgrade",
-        "description": "Increase your energy independence with a storage solution."
+    },
+    {
+      "title": {
+        "en": "Savings Milestone",
+        "pt": "Marco de Economia"
       },
-      {
-        "title": "Premium Care",
-        "description": "Unlock priority support and annual optimization services."
+      "description": {
+        "en": "Your accumulated savings continue to grow every month.",
+        "pt": "Sua economia acumulada continua crescendo a cada mês."
       }
-    ]
-  }
-]
+    },
+    {
+      "title": {
+        "en": "Health Check",
+        "pt": "Verificação do Sistema"
+      },
+      "description": {
+        "en": "All equipment is operating within expected parameters.",
+        "pt": "Todos os equipamentos estão operando dentro dos parâmetros esperados."
+      }
+    }
+  ],
+
+  "recommendations": [
+    {
+      "title": {
+        "en": "Invite a friend",
+        "pt": "Convide um amigo"
+      },
+      "description": {
+        "en": "Share your experience and receive exclusive benefits.",
+        "pt": "Compartilhe sua experiência e receba benefícios exclusivos."
+      }
+    },
+    {
+      "title": {
+        "en": "Review your dashboard",
+        "pt": "Revise seu painel"
+      },
+      "description": {
+        "en": "Discover new insights about your energy consumption.",
+        "pt": "Descubra novos insights sobre seu consumo de energia."
+      }
+    }
+  ]
+}
+{
+  "id": "year-5",
+
+  "title": {
+    "en": "Five years of partnership",
+    "pt": "Cinco anos de parceria"
+  },
+
+  "description": {
+    "en": "Your relationship with Solar Eco has become a long-term success story.",
+    "pt": "Seu relacionamento com a Solar Eco se tornou uma história de sucesso de longo prazo."
+  },
+
+  "timeline": [
+    {
+      "title": {
+        "en": "5-Year Anniversary",
+        "pt": "Aniversário de 5 anos"
+      },
+      "description": {
+        "en": "Thank you for trusting Solar Eco for the last five years.",
+        "pt": "Obrigado por confiar na Solar Eco durante os últimos cinco anos."
+      }
+    },
+    {
+      "title": {
+        "en": "Lifetime Savings",
+        "pt": "Economia Acumulada"
+      },
+      "description": {
+        "en": "Your accumulated savings reached a remarkable milestone.",
+        "pt": "Sua economia acumulada atingiu uma marca impressionante."
+      }
+    },
+    {
+      "title": {
+        "en": "Preventive Maintenance",
+        "pt": "Manutenção Preventiva"
+      },
+      "description": {
+        "en": "A routine inspection confirms your system remains in excellent condition.",
+        "pt": "Uma inspeção de rotina confirma que seu sistema permanece em excelentes condições."
+      }
+    }
+  ],
+
+  "recommendations": [
+    {
+      "title": {
+        "en": "Battery Upgrade",
+        "pt": "Atualização para Baterias"
+      },
+      "description": {
+        "en": "Increase your energy independence with a storage solution.",
+        "pt": "Aumente sua independência energética com uma solução de armazenamento."
+      }
+    },
+    {
+      "title": {
+        "en": "Premium Care",
+        "pt": "Plano Premium Care"
+      },
+      "description": {
+        "en": "Unlock priority support and annual optimization services.",
+        "pt": "Tenha acesso ao suporte prioritário e aos serviços anuais de otimização."
+      }
+    }
+  ]
+}
