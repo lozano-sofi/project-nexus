@@ -260,6 +260,8 @@ function renderCustomerInformation() {
 
     }
 
+    const language = getCurrentLanguage();
+
     const subscription =
 
         Experience.subscription?.subscription || {};
@@ -286,7 +288,11 @@ function renderCustomerInformation() {
 
         Elements.subscriptionPlan.textContent =
 
-            subscription.planName || "—";
+            subscription.planName?.[language] ||
+
+            subscription.planName?.en ||
+
+            "—";
 
     if (Elements.preferredContact)
 
@@ -490,9 +496,11 @@ function renderInsights() {
 
     }
 
-   const purchases =
+    const language = getCurrentLanguage();
 
-    Experience.purchases?.purchases || [];
+    const purchases =
+
+        Experience.purchases?.purchases || [];
 
     const totalInvestment =
 
@@ -514,7 +522,13 @@ function renderInsights() {
 
         {
 
-            title: "Total Investment",
+            title:
+
+                language === "pt"
+
+                    ? "Investimento Total"
+
+                    : "Total Investment",
 
             value:
 
@@ -524,17 +538,33 @@ function renderInsights() {
 
         {
 
-            title: "Subscription",
+            title:
+
+                language === "pt"
+
+                    ? "Plano"
+
+                    : "Subscription",
 
             value:
 
-                subscription.planName
+                subscription.planName?.[language] ||
+
+                subscription.planName?.en ||
+
+                "—"
 
         },
 
         {
 
-            title: "Annual Fee",
+            title:
+
+                language === "pt"
+
+                    ? "Valor Anual"
+
+                    : "Annual Fee",
 
             value:
 
@@ -544,7 +574,13 @@ function renderInsights() {
 
         {
 
-            title: "Renewal",
+            title:
+
+                language === "pt"
+
+                    ? "Renovação"
+
+                    : "Renewal",
 
             value:
 
@@ -561,26 +597,21 @@ function renderInsights() {
         );
 
         card.className =
+
             "insight-card glass";
 
         card.innerHTML = `
 
-            <small>
+            <small>${insight.title}</small>
 
-                ${insight.title}
-
-            </small>
-
-            <strong>
-
-                ${insight.value}
-
-            </strong>
+            <strong>${insight.value}</strong>
 
         `;
 
         Elements.insightsContainer.appendChild(
+
             card
+
         );
 
     });
