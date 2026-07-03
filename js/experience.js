@@ -311,7 +311,6 @@ function renderCustomerInformation() {
 /* ==========================================
    TIMELINE
 ========================================== */
-
 function renderTimeline() {
 
     if (!Experience.journey) {
@@ -321,6 +320,8 @@ function renderTimeline() {
         return;
 
     }
+
+    const language = getCurrentLanguage();
 
     Elements.timelineContainer.innerHTML = "";
 
@@ -335,9 +336,9 @@ function renderTimeline() {
 
         item.innerHTML = `
 
-            <h3>${step.title}</h3>
+            <h3>${step.title[language] || step.title.en}</h3>
 
-            <p>${step.description}</p>
+            <p>${step.description[language] || step.description.en}</p>
 
         `;
 
@@ -363,6 +364,8 @@ function renderRecommendations() {
 
     }
 
+    const language = getCurrentLanguage();
+
     Elements.recommendationContainer.innerHTML = "";
 
     Experience.journey.recommendations.forEach(item => {
@@ -376,9 +379,9 @@ function renderRecommendations() {
 
         card.innerHTML = `
 
-            <h3>${item.title}</h3>
+            <h3>${item.title[language] || item.title.en}</h3>
 
-            <p>${item.description}</p>
+            <p>${item.description[language] || item.description.en}</p>
 
         `;
 
