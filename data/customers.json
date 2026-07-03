@@ -1,103 +1,81 @@
-{
-  "id": 1001,
-  "name": "Olivia Carter",
-  "profile": "Residential",
-  "memberSince": "2019",
-  "subscription": "Solar Care Premium",
-  "preferredContact": "WhatsApp",
-  "lastInteraction": "2 days ago",
-  "satisfaction": 98,
+[
+  {
+    "id": 1001,
+    "name": "Olivia Carter",
+    "profile": "Residential",
+    "memberSince": "2019",
+    "subscription": "Solar Care Premium",
+    "preferredContact": "WhatsApp",
+    "lastInteraction": "2 days ago",
+    "satisfaction": 98,
 
-  "dashboard": {
+    "dashboard": {
 
-    "en": {
+      "en": {
 
-      "greeting": "Good afternoon 👋",
+        "greeting": "Good afternoon 👋",
+        "heroTitle": "Welcome back.",
+        "heroText": "Everything is running perfectly. Your solar ecosystem continues to generate savings every day.",
+        "savings": "$12,480",
+        "energy": "38,250 kWh",
+        "co2": "14.8 t",
+        "relationship": "5 Years"
 
-      "heroTitle": "Welcome back.",
+      },
 
-      "heroText": "Everything is running perfectly. Your solar ecosystem continues to generate savings every day.",
+      "pt": {
 
-      "savings": "$12,480",
+        "greeting": "Boa tarde 👋",
+        "heroTitle": "Bem-vindo de volta.",
+        "heroText": "Tudo está funcionando perfeitamente. Seu ecossistema solar continua gerando economia todos os dias.",
+        "savings": "$12.480",
+        "energy": "38.250 kWh",
+        "co2": "14,8 t",
+        "relationship": "5 Anos"
 
-      "energy": "38,250 kWh",
+      }
 
-      "co2": "14.8 t",
+    }
 
-      "relationship": "5 Years"
+  },
 
-    },
+  {
+    "id": 1002,
+    "name": "Leonardo Costa",
+    "profile": "Commercial",
+    "memberSince": "2021",
+    "subscription": "Business Performance",
+    "preferredContact": "Email",
+    "lastInteraction": "Yesterday",
+    "satisfaction": 95,
 
-    "pt": {
+    "dashboard": {
 
-      "greeting": "Boa tarde 👋",
+      "en": {
 
-      "heroTitle": "Bem-vindo de volta.",
+        "greeting": "Good afternoon 👋",
+        "heroTitle": "Business performance looks great.",
+        "heroText": "Your commercial solar operation exceeded this month's production forecast.",
+        "savings": "$42,960",
+        "energy": "126,900 kWh",
+        "co2": "51.4 t",
+        "relationship": "3 Years"
 
-      "heroText": "Tudo está funcionando perfeitamente. Seu ecossistema solar continua gerando economia todos os dias.",
+      },
 
-      "savings": "$12.480",
+      "pt": {
 
-      "energy": "38.250 kWh",
+        "greeting": "Boa tarde 👋",
+        "heroTitle": "O desempenho do seu negócio está excelente.",
+        "heroText": "Sua operação solar comercial superou a previsão de geração deste mês.",
+        "savings": "$42.960",
+        "energy": "126.900 kWh",
+        "co2": "51,4 t",
+        "relationship": "3 Anos"
 
-      "co2": "14,8 t",
-
-      "relationship": "5 Anos"
+      }
 
     }
 
   }
-
-}
-
-{
-  "id": 1002,
-  "name": "Leonardo Costa",
-  "profile": "Commercial",
-  "memberSince": "2021",
-  "subscription": "Business Performance",
-  "preferredContact": "Email",
-  "lastInteraction": "Yesterday",
-  "satisfaction": 95,
-
-  "dashboard": {
-
-    "en": {
-
-      "greeting": "Good afternoon 👋",
-
-      "heroTitle": "Business performance looks great.",
-
-      "heroText": "Your commercial solar operation exceeded this month's production forecast.",
-
-      "savings": "$42,960",
-
-      "energy": "126,900 kWh",
-
-      "co2": "51.4 t",
-
-      "relationship": "3 Years"
-
-    },
-
-    "pt": {
-
-      "greeting": "Boa tarde 👋",
-
-      "heroTitle": "O desempenho do seu negócio está excelente.",
-
-      "heroText": "Sua operação solar comercial superou a previsão de geração deste mês.",
-
-      "savings": "$42.960",
-
-      "energy": "126.900 kWh",
-
-      "co2": "51,4 t",
-
-      "relationship": "3 Anos"
-
-    }
-
-  }
-
-}
+]
