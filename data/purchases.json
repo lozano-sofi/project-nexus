@@ -5,9 +5,22 @@
       {
         "id": "PUR-10001",
         "date": "2019-03-12",
-        "product": "Solar Eco Residential Kit 6.4 kWp",
-        "category": "Solar System",
-        "status": "Active",
+
+        "product": {
+          "en": "Solar Eco Residential Kit 6.4 kWp",
+          "pt": "Kit Solar Residencial Solar Eco 6,4 kWp"
+        },
+
+        "category": {
+          "en": "Solar System",
+          "pt": "Sistema Solar"
+        },
+
+        "status": {
+          "en": "Active",
+          "pt": "Ativo"
+        },
+
         "value": 18490,
         "currency": "USD",
         "warrantyUntil": "2044-03-12"
@@ -15,9 +28,22 @@
       {
         "id": "PUR-10002",
         "date": "2020-08-18",
-        "product": "Smart Energy Monitor",
-        "category": "Accessory",
-        "status": "Installed",
+
+        "product": {
+          "en": "Smart Energy Monitor",
+          "pt": "Monitor Inteligente de Energia"
+        },
+
+        "category": {
+          "en": "Accessory",
+          "pt": "Acessório"
+        },
+
+        "status": {
+          "en": "Installed",
+          "pt": "Instalado"
+        },
+
         "value": 590,
         "currency": "USD",
         "warrantyUntil": "2025-08-18"
@@ -25,9 +51,22 @@
       {
         "id": "PUR-10003",
         "date": "2023-05-09",
-        "product": "Annual Preventive Maintenance",
-        "category": "Service",
-        "status": "Completed",
+
+        "product": {
+          "en": "Annual Preventive Maintenance",
+          "pt": "Manutenção Preventiva Anual"
+        },
+
+        "category": {
+          "en": "Service",
+          "pt": "Serviço"
+        },
+
+        "status": {
+          "en": "Completed",
+          "pt": "Concluído"
+        },
+
         "value": 249,
         "currency": "USD"
       }
@@ -40,9 +79,22 @@
       {
         "id": "PUR-20001",
         "date": "2021-07-15",
-        "product": "Commercial Solar System 38 kWp",
-        "category": "Solar System",
-        "status": "Active",
+
+        "product": {
+          "en": "Commercial Solar System 38 kWp",
+          "pt": "Sistema Solar Comercial 38 kWp"
+        },
+
+        "category": {
+          "en": "Solar System",
+          "pt": "Sistema Solar"
+        },
+
+        "status": {
+          "en": "Active",
+          "pt": "Ativo"
+        },
+
         "value": 74200,
         "currency": "USD",
         "warrantyUntil": "2046-07-15"
@@ -50,18 +102,44 @@
       {
         "id": "PUR-20002",
         "date": "2022-02-10",
-        "product": "Commercial Energy Monitoring",
-        "category": "Software",
-        "status": "Active",
+
+        "product": {
+          "en": "Commercial Energy Monitoring",
+          "pt": "Monitoramento Comercial de Energia"
+        },
+
+        "category": {
+          "en": "Software",
+          "pt": "Software"
+        },
+
+        "status": {
+          "en": "Active",
+          "pt": "Ativo"
+        },
+
         "value": 1890,
         "currency": "USD"
       },
       {
         "id": "PUR-20003",
         "date": "2024-01-22",
-        "product": "Performance Optimization Visit",
-        "category": "Service",
-        "status": "Completed",
+
+        "product": {
+          "en": "Performance Optimization Visit",
+          "pt": "Visita de Otimização de Desempenho"
+        },
+
+        "category": {
+          "en": "Service",
+          "pt": "Serviço"
+        },
+
+        "status": {
+          "en": "Completed",
+          "pt": "Concluído"
+        },
+
         "value": 890,
         "currency": "USD"
       }
