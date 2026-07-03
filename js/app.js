@@ -1,222 +1,54 @@
-/* ==========================================
-   PROJECT NEXUS
-   APPLICATION
-========================================== */
+document.addEventListener("DOMContentLoaded", async () => {
 
-document.addEventListener(
+    initializeStorage();
 
-    "DOMContentLoaded",
+    const page = window.location.pathname.split("/").pop();
 
-    async () => {
+    if (page === "terms.html") {
 
-        initializeStorage();
-
-        const page =
-
-            window.location.pathname
-
-                .split("/")
-
-                .pop();
-
-        switch (page) {
-
-            case "language.html":
-
-                initializeLanguageSelection();
-
-                break;
-
-            case "terms.html":
-
-                initializeTerms();
-
-                break;
-
-            case "experience.html":
-
-                try {
-
-                    await initializeDatabase();
-
-                    if (
-
-                        typeof Loader !==
-
-                        "undefined"
-
-                    ) {
-
-                        Loader.initialize();
-
-                    }
-
-                    if (
-
-                        typeof initializeTranslations ===
-
-                        "function"
-
-                    ) {
-
-                        initializeTranslations();
-
-                    }
-
-                    if (
-
-                        typeof Experience !==
-
-                        "undefined"
-
-                    ) {
-
-                        Experience.initialize();
-
-                    }
-
-                    if (
-
-                        typeof Controls !==
-
-                        "undefined"
-
-                    ) {
-
-                        Controls.initialize();
-
-                    }
-
-                }
-
-                catch (error) {
-
-                    console.error(
-
-                        "Project Nexus initialization error:",
-
-                        error
-
-                    );
-
-                }
-
-                break;
-
-        }
-
-    }
-
-);
-
-/* ==========================================
-   LANGUAGE
-========================================== */
-
-function initializeLanguageSelection() {
-
-    const buttons =
-
-        document.querySelectorAll(
-
-            "[data-language]"
-
-        );
-
-    if (!buttons.length) {
+        initializeTerms();
 
         return;
 
     }
 
-    buttons.forEach(button => {
+    if (page === "experience.html") {
 
-        button.addEventListener(
+        try {
 
-            "click",
+            await initializeDatabase();
 
-            () => {
+            Loader?.initialize();
 
-                Storage.set(
+            Experience?.initialize();
 
-                    "language",
+            Controls?.initialize();
 
-                    button.dataset.language
+        }
 
-                );
+        catch (error) {
 
-                window.location.href =
+            console.error(error);
 
-                    "terms.html";
+        }
 
-            }
+    }
 
-        );
-
-    });
-
-}
-
-/* ==========================================
-   TERMS
-========================================== */
+});
 
 function initializeTerms() {
 
-    const checkbox =
+    const checkbox = document.getElementById("agreeTerms");
+    const button = document.getElementById("continueButton");
 
-        document.getElementById(
+    if (!checkbox || !button) return;
 
-            "agreeTerms"
+    checkbox.addEventListener("change", () => {
+        button.disabled = !checkbox.checked;
+    });
 
-        );
+    button.addEventListener("click", () => {
+        window.location.href = "experience.html";
+    });
 
-    const button =
-
-        document.getElementById(
-
-            "continueButton"
-
-        );
-
-    if (
-
-        !checkbox ||
-
-        !button
-
-    ) {
-
-        return;
-
-    }
-
-    checkbox.addEventListener(
-
-        "change",
-
-        () => {
-
-            button.disabled =
-
-                !checkbox.checked;
-
-        }
-
-    );
-
-    button.addEventListener(
-
-        "click",
-
-        () => {
-
-            window.location.href =
-
-                "experience.html";
-
-        }
-
-    );
-
-                       }
+}
