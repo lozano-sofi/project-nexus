@@ -3,38 +3,95 @@
     "customerId": 1001,
     "subscription": {
       "planId": "CARE-PREMIUM",
-      "planName": "Solar Care Premium",
-      "status": "Active",
+
+      "planName": {
+        "en": "Solar Care Premium",
+        "pt": "Solar Care Premium"
+      },
+
+      "status": {
+        "en": "Active",
+        "pt": "Ativo"
+      },
+
       "startedAt": "2019-04-01",
+
       "renewalDate": "2027-04-01",
-      "billing": "Annual",
+
+      "billing": {
+        "en": "Annual",
+        "pt": "Anual"
+      },
+
       "price": 299,
+
       "currency": "USD",
+
       "benefits": [
-        "Priority Support",
-        "Annual Preventive Inspection",
-        "Performance Monitoring",
-        "Exclusive Customer Rewards"
+        {
+          "en": "Priority Support",
+          "pt": "Suporte Prioritário"
+        },
+        {
+          "en": "Annual Preventive Inspection",
+          "pt": "Inspeção Preventiva Anual"
+        },
+        {
+          "en": "Performance Monitoring",
+          "pt": "Monitoramento de Desempenho"
+        },
+        {
+          "en": "Exclusive Customer Rewards",
+          "pt": "Benefícios Exclusivos para Clientes"
+        }
       ]
     }
   },
-
   {
     "customerId": 1002,
     "subscription": {
       "planId": "BUSINESS-PERFORMANCE",
-      "planName": "Business Performance",
-      "status": "Active",
+
+      "planName": {
+        "en": "Business Performance",
+        "pt": "Performance Empresarial"
+      },
+
+      "status": {
+        "en": "Active",
+        "pt": "Ativo"
+      },
+
       "startedAt": "2021-08-01",
+
       "renewalDate": "2027-08-01",
-      "billing": "Annual",
+
+      "billing": {
+        "en": "Annual",
+        "pt": "Anual"
+      },
+
       "price": 990,
+
       "currency": "USD",
+
       "benefits": [
-        "Dedicated Account Manager",
-        "24/7 Priority Support",
-        "Monthly Performance Reports",
-        "Annual System Optimization"
+        {
+          "en": "Dedicated Account Manager",
+          "pt": "Gerente de Conta Dedicado"
+        },
+        {
+          "en": "24/7 Priority Support",
+          "pt": "Suporte Prioritário 24/7"
+        },
+        {
+          "en": "Monthly Performance Reports",
+          "pt": "Relatórios Mensais de Desempenho"
+        },
+        {
+          "en": "Annual System Optimization",
+          "pt": "Otimização Anual do Sistema"
+        }
       ]
     }
   }
