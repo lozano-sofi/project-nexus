@@ -419,6 +419,8 @@ function renderActivity() {
 
     }
 
+    const language = getCurrentLanguage();
+
     [...Experience.purchases.purchases]
 
         .sort(
@@ -440,17 +442,44 @@ function renderActivity() {
             card.className =
                 "activity-card glass";
 
+            const product =
+
+                typeof activity.product === "object"
+
+                    ? activity.product[language] ||
+                      activity.product.en
+
+                    : activity.product;
+
+            const category =
+
+                typeof activity.category === "object"
+
+                    ? activity.category[language] ||
+                      activity.category.en
+
+                    : activity.category;
+
+            const status =
+
+                typeof activity.status === "object"
+
+                    ? activity.status[language] ||
+                      activity.status.en
+
+                    : activity.status;
+
             card.innerHTML = `
 
                 <strong>
 
-                    ${activity.product}
+                    ${product}
 
                 </strong>
 
                 <small>
 
-                    ${activity.category}
+                    ${category}
 
                 </small>
 
@@ -462,7 +491,7 @@ function renderActivity() {
 
                 <span>
 
-                    ${activity.status}
+                    ${status}
 
                 </span>
 
