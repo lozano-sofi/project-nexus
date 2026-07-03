@@ -1,34 +1,73 @@
 [
   {
-    "id": "week-1",
-    "title": "Welcome to Solar Eco",
-    "description": "Your system has been installed successfully. We're monitoring the first days of production.",
-    "timeline": [
-      {
-        "title": "System Activated",
-        "description": "Your solar system is now generating clean energy."
-      },
-      {
-        "title": "First Production",
-        "description": "Congratulations! Your first kilowatt-hour has been generated."
-      },
-      {
-        "title": "Mobile App Ready",
-        "description": "Track your production, savings and support directly from the app."
-      }
-    ],
-    "recommendations": [
-      {
-        "title": "Complete your profile",
-        "description": "Add your contact preferences to receive personalized updates."
-      },
-      {
-        "title": "Enable notifications",
-        "description": "Receive alerts about production milestones and maintenance."
-      }
-    ]
+  "id": "week-1",
+
+  "title": {
+    "en": "Welcome to Solar Eco",
+    "pt": "Bem-vindo à Solar Eco"
   },
 
+  "description": {
+    "en": "Your system has been installed successfully. We're monitoring the first days of production.",
+    "pt": "Seu sistema foi instalado com sucesso. Estamos acompanhando os primeiros dias de geração."
+  },
+
+  "timeline": [
+    {
+      "title": {
+        "en": "System Activated",
+        "pt": "Sistema Ativado"
+      },
+      "description": {
+        "en": "Your solar system is now generating clean energy.",
+        "pt": "Seu sistema solar agora está gerando energia limpa."
+      }
+    },
+    {
+      "title": {
+        "en": "First Production",
+        "pt": "Primeira Geração"
+      },
+      "description": {
+        "en": "Congratulations! Your first kilowatt-hour has been generated.",
+        "pt": "Parabéns! Seu primeiro quilowatt-hora foi gerado."
+      }
+    },
+    {
+      "title": {
+        "en": "Mobile App Ready",
+        "pt": "Aplicativo Pronto"
+      },
+      "description": {
+        "en": "Track your production, savings and support directly from the app.",
+        "pt": "Acompanhe sua produção, economia e suporte diretamente pelo aplicativo."
+      }
+    }
+  ],
+
+  "recommendations": [
+    {
+      "title": {
+        "en": "Complete your profile",
+        "pt": "Complete seu perfil"
+      },
+      "description": {
+        "en": "Add your contact preferences to receive personalized updates.",
+        "pt": "Adicione suas preferências de contato para receber atualizações personalizadas."
+      }
+    },
+    {
+      "title": {
+        "en": "Enable notifications",
+        "pt": "Ative as notificações"
+      },
+      "description": {
+        "en": "Receive alerts about production milestones and maintenance.",
+        "pt": "Receba alertas sobre marcos de geração e manutenções."
+      }
+    }
+  ]
+  },
   {
     "id": "month-6",
     "title": "Six months together",
