@@ -154,20 +154,6 @@ function loadExperienceData() {
    HEADER
 ========================================== */
 
-function updateLastSync() {
-
-    if (!Elements.lastSync) {
-
-        return;
-
-    }
-
-    Elements.lastSync.textContent =
-
-        `Last sync • ${new Date().toLocaleTimeString()}`;
-
-}
-
 function renderHeader() {
 
     if (!Experience.customer) {
@@ -176,28 +162,21 @@ function renderHeader() {
 
     }
 
+    const language = getCurrentLanguage();
+
     const dashboard =
 
-        Experience.customer.dashboard || {};
+        Experience.customer.dashboard[language] ||
 
-    if (Elements.greeting) {
+        Experience.customer.dashboard.en;
 
-        Elements.greeting.textContent =
-
-            dashboard.greeting || "";
-
-    }
-
-    if (Elements.profileName) {
-
-        Elements.profileName.textContent =
-
-            Experience.customer.name
-                ?.split(" ")[0] || "";
-
-    }
+    Elements.greeting.textContent =
+        dashboard.greeting;
 
     updateLastSync();
+
+    Elements.profileName.textContent =
+        Experience.customer.name.split(" ")[0];
 
 }
 
@@ -219,25 +198,19 @@ function renderHero() {
 
     }
 
+    const language = getCurrentLanguage();
+
     const dashboard =
 
-        Experience.customer.dashboard || {};
+        Experience.customer.dashboard[language] ||
 
-    if (Elements.journeyTitle) {
+        Experience.customer.dashboard.en;
 
-        Elements.journeyTitle.textContent =
+    Elements.journeyTitle.textContent =
+        dashboard.heroTitle;
 
-            dashboard.heroTitle || "";
-
-    }
-
-    if (Elements.journeyText) {
-
-        Elements.journeyText.textContent =
-
-            dashboard.heroText || "";
-
-    }
+    Elements.journeyText.textContent =
+        dashboard.heroText;
 
 }
 
@@ -253,33 +226,25 @@ function renderMetrics() {
 
     }
 
+    const language = getCurrentLanguage();
+
     const dashboard =
 
-        Experience.customer.dashboard || {};
+        Experience.customer.dashboard[language] ||
 
-    if (Elements.savingValue)
+        Experience.customer.dashboard.en;
 
-        Elements.savingValue.textContent =
+    Elements.savingValue.textContent =
+        dashboard.savings;
 
-            dashboard.savings || "—";
+    Elements.energyValue.textContent =
+        dashboard.energy;
 
-    if (Elements.energyValue)
+    Elements.co2Value.textContent =
+        dashboard.co2;
 
-        Elements.energyValue.textContent =
-
-            dashboard.energy || "—";
-
-    if (Elements.co2Value)
-
-        Elements.co2Value.textContent =
-
-            dashboard.co2 || "—";
-
-    if (Elements.yearsValue)
-
-        Elements.yearsValue.textContent =
-
-            dashboard.relationship || "—";
+    Elements.yearsValue.textContent =
+        dashboard.relationship;
 
 }
 
